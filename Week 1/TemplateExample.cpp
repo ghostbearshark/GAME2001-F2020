@@ -6,7 +6,6 @@ using namespace std;
 
 //check 2 "things". Return the smallest
 template <class T>
-
 T min_func(T lVal, T rVal)
 {
 	if (lVal > rVal)
@@ -17,8 +16,7 @@ T min_func(T lVal, T rVal)
 	return lVal;
 }
 
-// Check 2 things. Return the largest
-
+// Check 2 "things". Return the largest
 template <class T>
 T max_func(T lVal, T rVal)
 {
@@ -31,7 +29,6 @@ T max_func(T lVal, T rVal)
 }
 
 //Implement a template class here
-
 template <class T>
 class TemplateClass
 {
@@ -42,6 +39,7 @@ public:
 		m_val = val;
 	}
 
+// Overload the < and > operators 
 	bool operator < (TemplateClass& rVal)
 	{
 		return m_val < rVal.GetVal();
@@ -58,7 +56,7 @@ public:
 	}
 
 
-private:
+//private:
 	T m_val;
 
 };
